@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>视频播放器基础功能实现</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    pre {
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 3px;
+      font-size: 14px;
+	  overflow-x: auto;
+	  white-space: pre-wrap;/* 内容换行 */
+    }
+  </style>
+ </head>
+ <body>
+  <h1>简单的视频播放器</h1>
+
+  <h2>1.实现的功能</h2>
+  <pre>
+    <code>
+1.视频播放的窗口
+2.视频的播放
+3.视频的暂停
+4.上一个视频及下一个视频
+	</code>
+  </pre>
+  <h2>2.实现功能的方法</h2>
+  <pre>
+    <code>
+1.播放窗口的实现方法：
+video controls id = "myvideo"  /video
+2.视频播放的实现方法：
+先将所有要播放的视频的名以文本形式存放在一个定义的数组中，再用循环遍历数组中的元素，定义一个play按钮，用play()方法实现视频的播放
+3.视频暂停的实现方法：
+定义一个stop按钮，用pause()方法实现视频的暂停
+4.上一个视频及下一个视频的实现方法：
+以下一个视频为例，定义一个按钮next，定义一个变量i代表当前遍历到的数组元素位置，每当点击next按钮时，i自增一次，再将该元素与上级目录地址拼接在一起组成当前播放的视频的地址，再调用play()方法播放即可实现；若要实现上一个视频同理i自减即可。
+（注意：i自增自减时可能会发生错误需在函数中加入相应判断条件）
+	</code>
+  </pre>
+ </body>
+</html>
