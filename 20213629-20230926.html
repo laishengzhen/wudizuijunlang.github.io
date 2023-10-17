@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    pre {
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 3px;
+      font-size: 14px;
+	  overflow-x: auto;
+	  white-space: pre-wrap;/* 内容换行 */
+    }
+	</style>
+  <title>实验报告</title>
+ </head>
+ <body>
+  <body>
+  <h1>Linux命令练习</h1>
+
+  <h2>命令及其功能</h2>
+  <pre>
+    <code>
+1.ping参数：
+ping 是一个常用的网络诊断工具，用于测试主机之间的连通性和延迟。参数为要检测的网址也可以为IP地址；Ctrl+C组合来停止ping命令的执行。
+2.tracert参数：
+tracert 命令是用于跟踪数据包从源地址到目的地址的路由路径的网络诊断工具。
+-d：指定对于所有 IP 地址不执行域名解析，直接输出 IP 地址。
+-h maximum_hops：设置跟踪的最大跃点数。默认值为 30。
+-j host-list：设置 IPv4 中转路由器列表。使用空格分隔主机名或 IP 地址。
+-w timeout：设置等待每个回复消息的超时时间（毫秒）。
+3.curl[选项]参数：
+curl 是一个常用的命令行工具，用于发送 HTTP 请求并获取响应。它支持多种协议，包括 HTTP、HTTPS、FTP、SMTP 等。
+-X：指定请求方法，如 GET、POST、PUT 等。
+-H：指定请求头，如 "Content-Type: application/json"。
+-d：指定请求体的数据，如 "{"key": "value"}"。
+-F：以 multipart/form-data 格式提交表单数据。
+-i：在输出中包含响应的头信息。
+-o：将响应保存到指定文件。
+-L：跟随重定向。
+4.less参数：
+less 是一个常用的分页查看文本文件的命令行工具。它可以加载大型文件并允许用户浏览和搜索文件内容。
+使用方向键（上下左右）进行滚动。可以使用PgUp和PgDn键进行更快速的混动。
+按空格键向下滚动一页。
+按b键向上滚动一页。
+按G键跳转到文件的末尾。
+按g键跳转到文件的开头。
+按/键后输入关键词，但后按Enter键可以搜索关键词并高亮显示匹配结果。按n键查找下一个。
+匹配项，按N键查找上一个匹配项。
+按q退出less查看器。
+5.grep[-n]关键字文件路径：
+grep 是一个常用的命令行工具，用于在文本文件中搜索指定的字符串。
+-i：忽略大小写。
+-v：只输出不匹配的行。
+-c：只输出匹配到的行数。
+-n：显示匹配到的行号。
+-r：递归搜索子目录中的文件。
+-w：仅匹配整个单词，而不是字符串的一部分。
+-l：仅输出匹配到的文件名。
+-L：仅输出不匹配的文件名。
+-f：从指定文件中读取匹配模式。
+-e：指定匹配模式。
+-E：使用扩展正则表达式进行匹配。
+6.cut[选项]<列表><文件名>：
+cut 是一个命令行工具，用于从文本文件中提取指定列的内容。它可以根据字段的位置或分隔符进行切割。
+-f：提取指定的字段。
+d：指定自定义的分隔符，要配合-f使用。
+--complement：输出除了指定字段外的部分。
+	</code>
+  </pre>
+ </body>
+</html>
