@@ -1,6 +1,6 @@
 var dataSource = {
     author: {
-        path: "img/",
+        path: "https://laishengzhen.github.io/img/",
         picFiles:["ljh.jpg","zzx.jpg","lsz.jpg","zrj.jpg"],
         name:["李健宏老师","张梓鑫","赖盛桢","张荣军"]
     },
